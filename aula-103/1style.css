@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+#main{
+    display: grid;
+    grid-template-areas: 'header header header'
+                          'nav nav aside'
+                          'section section aside'
+                          'footer footer footer';
+ grid-auto-rows: 5vh 15vh 43vh 23vh;
+ grid-column-gap: 8px;
+}
+header{
+grid-area: header;
+background-color: blue;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+header a{
+color: aqua;
+font-size: 12pt;
+text-decoration: blue;
+font-family: 'segoa UI, '
+
+}
+header a:nth-child(4){
+font-size: 16pt;
+color: green;
+}
+header a:hover{
+    font-size: 13px;
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(150, 97, 97);
+}
+aside{
+    grid-area: aside;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+section{
+    grid-area: section;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+section img{
+width: 45%;
+height: 100%;
+
+}
+footer{
+    grid-area: footer;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
